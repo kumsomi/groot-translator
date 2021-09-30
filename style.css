@@ -2,16 +2,21 @@
     margin: 0;
     padding: 0;
 }
+
 :root{
-    --primary-color:#C6D57E;
-    --background:#444941;
+    --primary-color:#082032;
+    --secondary-color:#F0A500;
 }
+
 body{
+    text-align: center;
     font-family: 'Nunito', sans-serif;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 2rem;
 }
 .navbar{
-    background-color: var(--background);
-    color: var(--primary-color);
+    color: var(--secondary-color);
     width: 100%;
     padding: 2rem 0rem;
     margin-bottom: 3rem;
@@ -20,50 +25,51 @@ body{
   text-align: center;
 }
 .sections{
+    margin:auto;
     width: 60%;
-    margin: 7rem auto;
-    
 }
 #btn-translate{
-    background-color:black;
-    color: white;
+    display: block;
+    margin:auto;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    border: 1px solid var(--secondary-color);
+    color: var(--secondary-color);
+    padding: 0.5rem;
+    background-color: var(--primary-color);
     font-family: 'Nunito', sans-serif;
-    margin: 0.5rem 0rem;
 }
 textarea{
     display: block;
     height: 9vh;
+    margin: auto;
     width: 80%;
-    margin: 1rem 0rem;
     padding: 1rem;
-    font-size: 1rem;
     font-family: 'Nunito', sans-serif;
 }
 #output{
     border: 1px solid black;
-    background-color:transparent;
     height: 9vh;
+    margin: auto;
     width: 80%;
-    margin: 1rem 0rem;
     padding: 1rem;
     font-family: 'Nunito', sans-serif;
+    background-color: white;
+    color:black;
 }
 .footer{
-    background-color: var(--background);
-    color: var(--primary-color);
-    width: 100%;
-    padding: 2rem 1rem;
-    margin-top: 3rem;
     text-align: center;
+    margin-top: 3rem;
 }
-a{
-    text-decoration: none;
-    color: var(--primary-color);
-    padding: 0rem 2rem;
+.non-bullet{
+    list-style-type: none;
+    padding: 1rem;
 }
 .list-item-inline{
     display: inline;
+    padding: 1rem;
 }
-ul{
-    padding: 1rem ;
+a{
+    text-decoration: none;
+    color: var(--secondary-color);
 }
